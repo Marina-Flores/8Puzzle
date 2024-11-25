@@ -1,19 +1,17 @@
-name: Docker Build and Run
+name: Build and Run Docker Image
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - main  
 
 jobs:
-  build:
+  docker-build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository
+
+    - name: Checkout Repository
       uses: actions/checkout@v3
 
     - name: Set up Docker Buildx
