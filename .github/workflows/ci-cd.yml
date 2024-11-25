@@ -30,7 +30,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t 8puzzle:latest -f ./8Puzzle/docker/dockerfile .
+        docker build -t 8puzzle:latest -f ./docker/dockerfile .
 
     - name: Run Docker container
       run: |
